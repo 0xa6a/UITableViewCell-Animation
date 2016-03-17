@@ -10,6 +10,12 @@
 
 @implementation AnimationHelper
 + (void)animateForCell:(UITableViewCell *)cell {
-    
+    CALayer *layer = cell.contentView.layer;
+    // transform
+    CATransform3D start = CATransform3DMakeRotation(M_PI / 2, 0.0, 1.0, 0.0); // y 轴有旋转
+    layer.transform = start;
+    [UIView animateWithDuration:1.f animations:^{
+        layer.transform = CATransform3DIdentity;
+    }];
 }
 @end

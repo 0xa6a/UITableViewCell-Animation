@@ -16,14 +16,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAV-Q7-TQn">
-                        <rect key="frame" x="93" y="35" width="45" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAV-Q7-TQn">
+                        <rect key="frame" x="93" y="35" width="199" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-nA-yHa">
-                        <rect key="frame" x="8" y="7" width="75.5" height="75.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-nA-yHa">
+                        <rect key="frame" x="8" y="8" width="75.5" height="75.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="DGq-nA-yHa" secondAttribute="height" multiplier="1:1" id="1A0-we-bpg"/>
                         </constraints>
@@ -35,6 +35,7 @@
                     <constraint firstItem="PAV-Q7-TQn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jkc-Fh-zg0"/>
                     <constraint firstItem="DGq-nA-yHa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qj4-tX-5h6"/>
                     <constraint firstItem="DGq-nA-yHa" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ubE-pg-3gW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PAV-Q7-TQn" secondAttribute="trailing" constant="20" id="vfn-j0-vkE"/>
                     <constraint firstItem="DGq-nA-yHa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="zXr-yd-Ycl"/>
                 </constraints>
             </tableViewCellContentView>
@@ -42,7 +43,7 @@
                 <outlet property="icon" destination="DGq-nA-yHa" id="wsO-39-7BW"/>
                 <outlet property="name" destination="PAV-Q7-TQn" id="yCW-P7-lLg"/>
             </connections>
-            <point key="canvasLocation" x="531" y="337"/>
+            <point key="canvasLocation" x="265" y="342"/>
         </tableViewCell>
     </objects>
 </document>

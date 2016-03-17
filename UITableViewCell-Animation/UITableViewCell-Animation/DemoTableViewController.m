@@ -9,6 +9,7 @@
 #import "DemoTableViewController.h"
 #import "DemoTableViewCell.h"
 #import "DemoModel.h"
+#import "AnimationHelper.h"
 
 #define CellReuseID @"DemoTableViewCell"
 
@@ -21,19 +22,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.dataSource = [self dataSource];
     
+    UITableView *tableView = (UITableView *)self.view;
+    [tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:CellReuseID];
+}
+
+#pragma mark - Data
+- (NSArray *)dataSource {
     NSMutableArray<DemoModel *> *dataSource = [NSMutableArray array];
-    NSArray *icons = @[@"fish", @"amazing"];
+    NSArray *icons = @[@"fish", @"amaz"];
     for (int i = 0; i < 30; i ++) {
         DemoModel *model = [[DemoModel alloc] init];
         model.name = [NSString stringWithFormat:@"David--%02d", i];
         model.icon = icons[i % icons.count];
         [dataSource addObject:model];
     }
-    self.dataSource = dataSource;
-    
-    UITableView *tableView = (UITableView *)self.view;
-    [tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:CellReuseID];
+    return dataSource;
 }
 
 #pragma mark - Table view data source
@@ -56,7 +61,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull UITableViewCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    
+    [AnimationHelper animateForCell:cell];
 }
 
 

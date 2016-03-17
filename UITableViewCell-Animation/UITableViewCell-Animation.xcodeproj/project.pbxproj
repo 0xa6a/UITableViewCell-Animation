@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF9F66951C9AD476008FEBFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F66941C9AD476008FEBFD /* main.m */; };
+		BF9F66981C9AD476008FEBFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F66971C9AD476008FEBFD /* AppDelegate.m */; };
+		BF9F669E1C9AD476008FEBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9F669C1C9AD476008FEBFD /* Main.storyboard */; };
+		BF9F66A01C9AD476008FEBFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9F669F1C9AD476008FEBFD /* Assets.xcassets */; };
+		BF9F66A31C9AD476008FEBFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9F66A11C9AD476008FEBFD /* LaunchScreen.storyboard */; };
+		BF9F66AC1C9AD4B1008FEBFD /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F66AB1C9AD4B1008FEBFD /* DemoTableViewController.m */; };
+		BF9F66B01C9AF4A4008FEBFD /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F66AE1C9AF4A4008FEBFD /* DemoTableViewCell.m */; };
+		BF9F66B11C9AF4A4008FEBFD /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF9F66AF1C9AF4A4008FEBFD /* DemoTableViewCell.xib */; };
+		BF9F66B41C9AFED7008FEBFD /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F66B31C9AFED7008FEBFD /* DemoModel.m */; };
+		BF9F66B71C9B03CE008FEBFD /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F66B61C9B03CE008FEBFD /* AnimationHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF9F66901C9AD476008FEBFD /* UITableViewCell-Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableViewCell-Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9F66941C9AD476008FEBFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF9F66961C9AD476008FEBFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF9F66971C9AD476008FEBFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF9F669D1C9AD476008FEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF9F669F1C9AD476008FEBFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF9F66A21C9AD476008FEBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF9F66A41C9AD476008FEBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9F66AA1C9AD4B1008FEBFD /* DemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewController.h; sourceTree = "<group>"; };
+		BF9F66AB1C9AD4B1008FEBFD /* DemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewController.m; sourceTree = "<group>"; };
+		BF9F66AD1C9AF4A4008FEBFD /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		BF9F66AE1C9AF4A4008FEBFD /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		BF9F66AF1C9AF4A4008FEBFD /* DemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
+		BF9F66B21C9AFED7008FEBFD /* DemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		BF9F66B31C9AFED7008FEBFD /* DemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+		BF9F66B51C9B03CE008FEBFD /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationHelper.h; sourceTree = "<group>"; };
+		BF9F66B61C9B03CE008FEBFD /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF9F668D1C9AD476008FEBFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF9F66871C9AD476008FEBFD = {
+			isa = PBXGroup;
+			children = (
+				BF9F66921C9AD476008FEBFD /* UITableViewCell-Animation */,
+				BF9F66911C9AD476008FEBFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF9F66911C9AD476008FEBFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F66901C9AD476008FEBFD /* UITableViewCell-Animation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF9F66921C9AD476008FEBFD /* UITableViewCell-Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F66961C9AD476008FEBFD /* AppDelegate.h */,
+				BF9F66971C9AD476008FEBFD /* AppDelegate.m */,
+				BF9F66AA1C9AD4B1008FEBFD /* DemoTableViewController.h */,
+				BF9F66AB1C9AD4B1008FEBFD /* DemoTableViewController.m */,
+				BF9F66AD1C9AF4A4008FEBFD /* DemoTableViewCell.h */,
+				BF9F66AE1C9AF4A4008FEBFD /* DemoTableViewCell.m */,
+				BF9F66AF1C9AF4A4008FEBFD /* DemoTableViewCell.xib */,
+				BF9F66B21C9AFED7008FEBFD /* DemoModel.h */,
+				BF9F66B31C9AFED7008FEBFD /* DemoModel.m */,
+				BF9F66B51C9B03CE008FEBFD /* AnimationHelper.h */,
+				BF9F66B61C9B03CE008FEBFD /* AnimationHelper.m */,
+				BF9F669C1C9AD476008FEBFD /* Main.storyboard */,
+				BF9F669F1C9AD476008FEBFD /* Assets.xcassets */,
+				BF9F66A11C9AD476008FEBFD /* LaunchScreen.storyboard */,
+				BF9F66A41C9AD476008FEBFD /* Info.plist */,
+				BF9F66931C9AD476008FEBFD /* Supporting Files */,
+			);
+			path = "UITableViewCell-Animation";
+			sourceTree = "<group>";
+		};
+		BF9F66931C9AD476008FEBFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F66941C9AD476008FEBFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF9F668F1C9AD476008FEBFD /* UITableViewCell-Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9F66A71C9AD476008FEBFD /* Build configuration list for PBXNativeTarget "UITableViewCell-Animation" */;
+			buildPhases = (
+				BF9F668C1C9AD476008FEBFD /* Sources */,
+				BF9F668D1C9AD476008FEBFD /* Frameworks */,
+				BF9F668E1C9AD476008FEBFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UITableViewCell-Animation";
+			productName = "UITableViewCell-Animation";
+			productReference = BF9F66901C9AD476008FEBFD /* UITableViewCell-Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF9F66881C9AD476008FEBFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Vincent;
+				TargetAttributes = {
+					BF9F668F1C9AD476008FEBFD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = BF9F668B1C9AD476008FEBFD /* Build configuration list for PBXProject "UITableViewCell-Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF9F66871C9AD476008FEBFD;
+			productRefGroup = BF9F66911C9AD476008FEBFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF9F668F1C9AD476008FEBFD /* UITableViewCell-Animation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF9F668E1C9AD476008FEBFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9F66A31C9AD476008FEBFD /* LaunchScreen.storyboard in Resources */,
+				BF9F66A01C9AD476008FEBFD /* Assets.xcassets in Resources */,
+				BF9F66B11C9AF4A4008FEBFD /* DemoTableViewCell.xib in Resources */,
+				BF9F669E1C9AD476008FEBFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF9F668C1C9AD476008FEBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9F66AC1C9AD4B1008FEBFD /* DemoTableViewController.m in Sources */,
+				BF9F66981C9AD476008FEBFD /* AppDelegate.m in Sources */,
+				BF9F66B71C9B03CE008FEBFD /* AnimationHelper.m in Sources */,
+				BF9F66B01C9AF4A4008FEBFD /* DemoTableViewCell.m in Sources */,
+				BF9F66B41C9AFED7008FEBFD /* DemoModel.m in Sources */,
+				BF9F66951C9AD476008FEBFD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF9F669C1C9AD476008FEBFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9F669D1C9AD476008FEBFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF9F66A11C9AD476008FEBFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9F66A21C9AD476008FEBFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF9F66A51C9AD476008FEBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF9F66A61C9AD476008FEBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF9F66A81C9AD476008FEBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UITableViewCell-Animation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenzhishen.UITableViewCell-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF9F66A91C9AD476008FEBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UITableViewCell-Animation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenzhishen.UITableViewCell-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF9F668B1C9AD476008FEBFD /* Build configuration list for PBXProject "UITableViewCell-Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9F66A51C9AD476008FEBFD /* Debug */,
+				BF9F66A61C9AD476008FEBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9F66A71C9AD476008FEBFD /* Build configuration list for PBXNativeTarget "UITableViewCell-Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9F66A81C9AD476008FEBFD /* Debug */,
+				BF9F66A91C9AD476008FEBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF9F66881C9AD476008FEBFD /* Project object */;
+}

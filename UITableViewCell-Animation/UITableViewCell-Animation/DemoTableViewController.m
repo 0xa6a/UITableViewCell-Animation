@@ -61,6 +61,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull UITableViewCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    // Add (BOOL)clockwise parameter to make animation less anoying.
     [AnimationHelper animateForCell:cell];
 }
 

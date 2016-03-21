@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AnimationHelper : NSObject
-+ (void)animateForCell:(UITableViewCell *)cell;
+
++ (void)animateRotationOnZAxisForCell:(UITableViewCell *)cell clockwise:(BOOL)clockwise;
++ (void)animateHorizontalUnfoldingForCell:(UITableViewCell *)cell;
+
 @end

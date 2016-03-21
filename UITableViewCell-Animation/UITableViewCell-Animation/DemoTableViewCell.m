@@ -22,6 +22,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.name.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255) / 255.f green:arc4random_uniform(255) / 255.f blue:arc4random_uniform(255) / 255.f alpha:1.f];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

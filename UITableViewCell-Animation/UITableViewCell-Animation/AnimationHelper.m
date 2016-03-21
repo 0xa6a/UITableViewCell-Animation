@@ -9,13 +9,20 @@
 #import "AnimationHelper.h"
 
 @implementation AnimationHelper
-+ (void)animateForCell:(UITableViewCell *)cell {
+
++ (void)animateRotationOnZAxisForCell:(UITableViewCell *)cell clockwise:(BOOL)clockwise {
     CALayer *layer = cell.contentView.layer;
-    // transform
-    CATransform3D start = CATransform3DMakeRotation(M_PI / 2, 0.0, 1.0, 0.0); // y 轴有旋转
-    layer.transform = start;
-    [UIView animateWithDuration:1.f animations:^{
+    CGFloat angle = (clockwise ? 1 : -1) * M_PI / 3;
+    CATransform3D initialTransform = CATransform3DMakeRotation(angle, 0, 0, 1.0);
+    layer.anchorPoint = CGPointMake(0, 0.5);
+    layer.transform = initialTransform;
+    [UIView animateWithDuration:0.5 animations:^{
         layer.transform = CATransform3DIdentity;
     }];
 }
+
++ (void)animateHorizontalUnfoldingForCell:(UITableViewCell *)cell {
+    CATransform3D *initialTransform;
+}
+
 @end

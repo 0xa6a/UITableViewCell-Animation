@@ -16,14 +16,17 @@
 
 @interface DemoTableViewController ()
 @property (nonatomic, strong) NSArray<DemoModel *> *dataSource;
+@property (nonatomic) CGPoint lastOffset;
+@property (nonatomic, getter=isScrollingUpward) BOOL scrollingUpward;
 @end
 
 @implementation DemoTableViewController
-
+#pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSource = [self dataSource];
     
+    // Register .xib file.
     UITableView *tableView = (UITableView *)self.view;
     [tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:CellReuseID];
 }
@@ -41,7 +44,8 @@
     return dataSource;
 }
 
-#pragma mark - Table view data source
+#pragma mark - Delegate Methods
+#pragma mark UITableViewDelegate & UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -53,7 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellReuseID forIndexPath:indexPath];
     
-    // Configure the cell...
+    // Configure the cell.
     DemoModel *model = self.dataSource[indexPath.row];
     [cell setIcon:model.icon name:model.name];
     
@@ -61,9 +65,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(nonnull UITableViewCell *)cell forRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    [AnimationHelper animateForCell:cell];
+    [AnimationHelper animateRotationOnZAxisForCell:cell clockwise:self.isScrollingUpward];
 }
 
-
+#pragma mark UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGPoint currentOffset = scrollView.contentOffset;
+    self.scrollingUpward = currentOffset.y > self.lastOffset.y;
+    self.lastOffset = currentOffset;
+}
 
 @end

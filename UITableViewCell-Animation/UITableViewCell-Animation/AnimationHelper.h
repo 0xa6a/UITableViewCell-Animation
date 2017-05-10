@@ -11,6 +11,5 @@
 @interface AnimationHelper : NSObject
 
 + (void)animateRotationOnZAxisForCell:(UITableViewCell *)cell clockwise:(BOOL)clockwise;
-+ (void)animateHorizontalUnfoldingForCell:(UITableViewCell *)cell;
 
 @end

@@ -21,8 +21,4 @@
     }];
 }
 
-+ (void)animateHorizontalUnfoldingForCell:(UITableViewCell *)cell {
-    CATransform3D *initialTransform;
-}
-
 @end
